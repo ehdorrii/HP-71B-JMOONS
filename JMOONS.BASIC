@@ -9,7 +9,7 @@
 90 DIM D$[22]
 100 ! First time through, skip the beep
 110 GOTO 150
-120 H(1)=M1
+120 ! Beep only on bad data entry
 130 'REPROMPT': BEEP 
 140 OFF ERROR
 150 D$="20"&DATE$&"  "
